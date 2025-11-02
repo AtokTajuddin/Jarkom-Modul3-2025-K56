@@ -249,7 +249,6 @@ iface eth0 inet static
 
 up echo nameserver 192.168.122.1 > /etc/resolv.conf
 ```
-(Kurang setup khamul untuk menjadi dhcp)
 
 ```
 # 1. Pastikan Aldarion bisa konek internet (sesuai Soal 1)
