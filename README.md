@@ -9,69 +9,59 @@
 | Muhammad Huda Rabbani  | 5027241098  |
 ---
 
+# Network Topology Documentation
 
+## Switch Distribution
 
-# Steps awal
+| Switch | Total Nodes | Connection To | Node Names |
+|--------|-------------|---------------|------------|
+| **Switch 1** | 3 nodes | Switch 8 | Elendil, Isildur, Anarion |
+| **Switch 2** | 3 nodes | Switch 5 | - |
+| **Switch 3** | 1 node | Switch 6 | - |
+| **Switch 4** | 3 nodes | - | - |
+| **Switch 5** | 3 nodes | Switch 2 | - |
+| **Switch 6** | 2 nodes | Switch 3 | - |
+| **Switch 8** | 3 nodes | Switch 1 | - |
 
-Switch 1 =  3 Node (Elendil,Isildur,Anarion)
-Switch 2 = 3 Node dan menjadi penghubung ke switch 5 dalam kasus ini 
-Switch 3 =  1 Node dan menjadi penghubung ke switch lainnya dalam kasus ini switch 6
-Switch 4 = 3 Node
-Switch 5 = 3 Node dan terhubung ke Switch 2
-Switch 6 = 2 Node dan terhubung ke Switch 3
-Switch 8 = 3 Node dan terhubung ke switch 1
+## Keluarga Manusia (Dynamic IP)
 
-dynamic client hanya ada 2 pada praktikum kali ini.
+| Node Name | Role | IP Type |
+|-----------|------|---------|
+| Minastir | Forward Proxy | Dynamic |
+| Aldarion | DHCP Server | Dynamic |
+| Erendis | DNS Master | Dynamic |
+| Elendil | Laravel Worker-1 | Dynamic |
+| Isildur | Laravel Worker-2 | Dynamic |
+| Anarion | Laravel Worker-3 | Dynamic |
+| Miriel | Client-Static-1 | Static |
+| Pharazon | Load Balancer (PHP) | Dynamic |
+| Palantir | Database Server | Dynamic |
+| Elros | Load Balancer (Laravel) | Dynamic |
+| Amandil | Client-Dynamic-2 | Dynamic |
+| Khamul | Client-Fixed-Address | Fixed |
 
----
+## Keluarga Peri (Dynamic IP)
 
-#### Keluarga manusia (Dyanamic IP)
+| Node Name | Role | IP Type |
+|-----------|------|---------|
+| Amdir | DNS Slave | Dynamic |
+| Galadriel | PHP Worker-1 | Dynamic |
+| Celeborn | PHP Worker-2 | Dynamic |
+| Oropher | PHP Worker-3 | Dynamic |
+| Gilgalad | Client-Dynamic-1 | Dynamic |
+| Celebrimbor | Client-Static-2 | Static |
 
-- Minastir (Forward Proxy)
-    
-- Aldarion (DHCP Server)
-    
-- Erendis (DNS Master)
-    
-- Elendil (Laravel Worker-1)
-    
-- Isildur (Laravel Worker-2)
-    
-- Anarion (Laravel Worker-3)
-    
-- Miriel (Client-Static-1)
-    
-- Pharazon (Load Balancer (PHP))  
-    
-- Palantir (Database Server)
-    
-- Elros (Load Balancer (Laravel))
-    
-- Amandil (Client-Dynamic-2)
-    
-- Khamul (Client-Fixed-Address)
+## Summary Statistics
 
----
-
-#### Keluarga Peri (Dynamic IP)
-
-
-Node Keluarga Kerajaan Peri (Elf)
-    
-
-- Amdir (DNS Slave)
-    
-- Galadriel (PHP Worker-1)
-    
-- Celeborn (PHP Worker-2)
-    
-- Oropher (PHP Worker-3)
-    
-- Gilgalad (Client-Dynamic-1)
-    
-- Celebrimbor (Client-Static-2)  
-
-
+| Category | Total |
+|----------|-------|
+| **Total Switches** | 7 |
+| **Total Nodes** | 18 |
+| **Dynamic IP Nodes** | 14 |
+| **Static IP Nodes** | 2 |
+| **Fixed Address Nodes** | 1 |
+| **Keluarga Manusia** | 12 nodes |
+| **Keluarga Peri** | 6 nodes |
 ---
 
 #### Keluarga Dwarf
